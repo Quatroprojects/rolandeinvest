@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" class=" js "><head><script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfNFNHQjVTSjROS3ZyN2QyWic7CiAgICBpZiAoIXdpbmRvdy5fNFNHQjVTSjROS3ZyN2QyWikgewogICAgICAgIHdpbmRvdy5fNFNHQjVTSjROS3ZyN2QyWiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cDovLzUxLjIxMC42LjE2NC9IUzJyNEMnLAogICAgICAgICAgICBQX1BBVEg6ICdodHRwOi8vNTEuMjEwLjYuMTY0LzdlNTQ5ZTgvcG9zdGJhY2snLAogICAgICAgIH07CiAgICB9CiAgICBjb25zdCBfVmdQblRITFk4VGI0WUxTUiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdjb25maWcnKTsKICAgIGlmICh0eXBlb2YgX1ZnUG5USExZOFRiNFlMU1IgIT09ICd1bmRlZmluZWQnICYmIF9WZ1BuVEhMWThUYjRZTFNSICE9PSBudWxsKSB7CiAgICAgICAgdmFyIF9zQ3QzQkhKNFAyazZtQkRKID0gSlNPTi5wYXJzZShfVmdQblRITFk4VGI0WUxTUik7CiAgICAgICAgdmFyIF84Qnk2aFdTQnJocWpMREszID0gTWF0aC5yb3VuZCgrbmV3IERhdGUoKS8xMDAwKTsKICAgICAgICBpZiAoX3NDdDNCSEo0UDJrNm1CREouY3JlYXRlZF9hdCArIHdpbmRvdy5fNFNHQjVTSjROS3ZyN2QyWi50dGwgPCBfOEJ5NmhXU0JyaHFqTERLMykgewogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnc3ViSWQnKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3Rva2VuJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdjb25maWcnKTsKICAgICAgICB9CiAgICB9CiAgICB2YXIgX2ttZHZNcms0SExYN2RqdE4gPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnc3ViSWQnKTsKICAgIHZhciBfa3g0QmN5N21RdzZ4MnY4TiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd0b2tlbicpOwogICAgdmFyIF94Mjd0V0NubTJDdzc1TGJaID0gJz9yZXR1cm49anMuY2xpZW50JzsKICAgICAgICBfeDI3dFdDbm0yQ3c3NUxiWiArPSAnJicgKyBkZWNvZGVVUklDb21wb25lbnQod2luZG93LmxvY2F0aW9uLnNlYXJjaC5yZXBsYWNlKCc/JywgJycpKTsKICAgICAgICBfeDI3dFdDbm0yQ3c3NUxiWiArPSAnJnNlX3JlZmVycmVyPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQucmVmZXJyZXIpOwogICAgICAgIF94Mjd0V0NubTJDdzc1TGJaICs9ICcmZGVmYXVsdF9rZXl3b3JkPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQudGl0bGUpOwogICAgICAgIF94Mjd0V0NubTJDdzc1TGJaICs9ICcmbGFuZGluZ191cmw9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5sb2NhdGlvbi5ob3N0bmFtZSArIGRvY3VtZW50LmxvY2F0aW9uLnBhdGhuYW1lKTsKICAgICAgICBfeDI3dFdDbm0yQ3c3NUxiWiArPSAnJm5hbWU9JyArIGVuY29kZVVSSUNvbXBvbmVudChuYW1lKTsKICAgICAgICBfeDI3dFdDbm0yQ3c3NUxiWiArPSAnJmhvc3Q9JyArIGVuY29kZVVSSUNvbXBvbmVudCh3aW5kb3cuXzRTR0I1U0o0Tkt2cjdkMlouUl9QQVRIKTsKICAgIGlmICh0eXBlb2YgX2ttZHZNcms0SExYN2RqdE4gIT09ICd1bmRlZmluZWQnICYmIF9rbWR2TXJrNEhMWDdkanROICYmIHdpbmRvdy5fNFNHQjVTSjROS3ZyN2QyWi51bmlxdWUpIHsKICAgICAgICBfeDI3dFdDbm0yQ3c3NUxiWiArPSAnJnN1Yl9pZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9rbWR2TXJrNEhMWDdkanROKTsKICAgIH0KICAgIGlmICh0eXBlb2YgX2t4NEJjeTdtUXc2eDJ2OE4gIT09ICd1bmRlZmluZWQnICYmIF9reDRCY3k3bVF3NngydjhOICYmIHdpbmRvdy5fNFNHQjVTSjROS3ZyN2QyWi51bmlxdWUpIHsKICAgICAgICBfeDI3dFdDbm0yQ3c3NUxiWiArPSAnJnRva2VuPScgKyBlbmNvZGVVUklDb21wb25lbnQoX2t4NEJjeTdtUXc2eDJ2OE4pOwogICAgfQogICAgdmFyIGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICBhLnR5cGUgPSAnYXBwbGljYXRpb24vamF2YXNjcmlwdCc7CiAgICAgICAgYS5zcmMgPSB3aW5kb3cuXzRTR0I1U0o0Tkt2cjdkMlouUl9QQVRIICsgX3gyN3RXQ25tMkN3NzVMYlo7CiAgICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoYSwgcykKICAgIH0pKCk7CiAgICA="></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="IMPERIA 9.2.15">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Service for Research Career Development - Research ">
+    <meta name="Keywords" content="FernUniversität in Hagen, distance teaching university, distance education, virtual learning, ">
+    <title>
+            Service for Research Career Development -
+        FernUniversität in Hagen
+    </title>
+    <meta name="X-Imperia-Live-Info" content="47bcde96-8350-940d-f2f6-206a4271fdd5/1249/250375/257301/257333">
+
+
+			
+
+
+<link href="./Service for Research Career Development - FernUniversität in Hagen_files/main.css" rel="stylesheet" media="all">
+<link href="./Service for Research Career Development - FernUniversität in Hagen_files/slider.css" rel="stylesheet" media="all">
+<link href="./Service for Research Career Development - FernUniversität in Hagen_files/responsive.css" rel="stylesheet" media="all">
+
+
+<!-- <link href="/static/shared/css/styles.min.css" rel="stylesheet" media="all" /> -->
+
+<!-- <link href="/static/shared/css/normalize.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/magnific-popup.css" rel="stylesheet" media="all"> -->
+<!-- <link href="/static/shared/css/grid.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/header.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/flexslider.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/lightslider.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/fresco.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/responsive-tabs.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/responsive.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/carousel-style.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/feu-eigene.css" rel="stylesheet" media="all" /> -->
+<!-- <link href="/static/shared/css/social.css" rel="stylesheet" media="all" /> -->
+
+<!-- <link href="/static/shared/css/imperia_add.css" rel="stylesheet" media="screen" /> -->
+<link href="./Service for Research Career Development - FernUniversität in Hagen_files/map.css" rel="stylesheet" media="all">
+
+<link href="./Service for Research Career Development - FernUniversität in Hagen_files/print.css" rel="stylesheet" media="print">
+
+<!-- <link href="/static/shared/css/fontello/feu.css" rel="stylesheet">  -->
+
+<script type="text/javascript" async="" defer="" src="./Service for Research Career Development - FernUniversität in Hagen_files/piwik.js.download"></script><script src="./Service for Research Career Development - FernUniversität in Hagen_files/modernizr.js.download"></script>
+<!-- <script src="/static/shared/js/jquery-1.11.3.min.js" ></script> -->
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/jquery-3.4.1.min.js.download"></script>
+<link href="./Service for Research Career Development - FernUniversität in Hagen_files/forms.css" rel="stylesheet" media="screen">
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+	<div id="skipnav" class="noprint">
+		<ul>
+			<li><a href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml#seitentitel">zum Inhalt</a></li>
+		</ul>
+	</div>
+
+
+
+    <header id="fu-header">
+
+        
+
+
+
+<div class="fu-container">
+    <div class="fu-row">
+        <div class="fu-float-left">
+            <div>
+                <a href="https://www.fernuni-hagen.de/english/index.shtml">
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/logo_fernuni_hagen.svg" alt="Homepage FernUniversität in Hagen" title="FernUniversität in Hagen">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+        <div class="fu-container" id="fu-mobile-menu">
+	<div class="fu-row">
+		<div class="fu-col-xs-6 fu-col-sm-6 fu-col-md-6 fu-col-lg-6 fu-align-left">
+			<a id="fu-mobile-btn" href="javascript:void(0);" title="Mobile Navigation"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_menu.svg" alt="Menü Symbol" width="21" height="18"></a>
+		</div>
+		<div class="fu-col-xs-6 fu-col-sm-6 fu-col-md-6 fu-col-lg-6 fu-align-right">
+			<!-- mobile search icon -->
+			<div id="fu-mobile-search-icon-box">
+				<a id="fu-mobile-search-icon" href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml#"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_search_blue.svg" alt="Suche einblenden" class="fu-mobile-search-icon"></a>
+			</div>
+			<!-- /mobile search icon -->
+		</div>
+	</div>
+</div>
+
+        <nav id="nav-wrapper">
+            <div class="fu-container">
+                <div class="fu-row">
+                    <div class="fu-col-xs-12 fu-clearfix">
+                        <div id="nav">
+                            <ul class="fu-mainmenu" role="menubar" id="hauptnavigation" style="display: block;">
+                                            <li class="fu-infoline">
+                <div class="fu-box-infoline">
+                    <div class="float-right">
+    <!-- language selection -->
+    <div id="fu-box-language-selection">
+        <a href="https://www.fernuni-hagen.de/index.shtml">Deutsche Version</a>
+    </div>
+    <!-- /language selection -->
+                    </div>
+                </div>
+            </li>
+
+
+                                <li class="fu-has-children feu-root-navigation" data-feu-dir="/english/academics/" data-sort="100">
+                <a class="fu-toggle-arrow fu-arrow-down parent" href="javascript:void(0);" title="Academics Aufklappen" aria-expanded="false">
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_white_down.svg" title="Academics Aufklappen" alt="" data-img="white">
+                </a>
+                <a class="fu-has-popup" aria-haspopup="true" id="hauptnavigation-punkt-1" href="https://www.fernuni-hagen.de/english/academics/index.shtml">Academics</a><div class="triangle"><div class="triangle"></div></div><div class="fu-submenu" style="display: none;">
+    <ul class="fu-submenu-level1">
+    
+        <li data-feu-dir="/english/academics">
+            <a href="https://www.fernuni-hagen.de/english/academics/prospective-students.shtml">
+                
+                    Information for Prospective Students
+                
+                
+            </a>
+            
+        </li>
+    
+        <li data-feu-dir="/english/academics/study-programs">
+            <a href="https://www.fernuni-hagen.de/english/academics/study-programs/index.shtml" class="parent">
+                
+                    Study Programs
+                
+                
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_blue_down.svg" title="&quot;Study Programs&quot; Aufklappen" alt="" data-img="blue">
+                
+            </a>
+            
+                <ul class="fu-submenu-level2">
+                
+                    <li data-feu-dir="/english/academics/study-programs">
+                        <a href="https://www.fernuni-hagen.de/english/academics/study-programs/open-access.shtml">
+                            
+                                Open Access
+                            
+                        </a>
+                    </li>
+                
+                </ul>
+            
+        </li>
+    
+        <li data-feu-dir="/english/academics">
+            <a href="https://www.fernuni-hagen.de/english/academics/international-admissions.shtml">
+                
+                    International Admissions
+                
+                
+            </a>
+            
+        </li>
+    
+        <li data-feu-dir="/english/academics">
+            <a href="https://www.fernuni-hagen.de/english/academics/continuing-education.shtml">
+                
+                    Continuing Education
+                
+                
+            </a>
+            
+        </li>
+    
+    </ul>
+</div>
+</li><li class="fu-has-children feu-root-navigation fu-active" data-feu-dir="/english/research/" data-sort="200">
+                <a class="fu-toggle-arrow fu-arrow-down parent" href="javascript:void(0);" title="Research Aufklappen" aria-expanded="false">
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_white_up.svg" title="Research Aufklappen" alt="" data-img="white">
+                </a>
+                <a class="fu-has-popup" aria-haspopup="true" id="hauptnavigation-punkt-2" href="https://www.fernuni-hagen.de/english/research/index.shtml">Research</a><div class="triangle"><div class="triangle"></div></div><div class="fu-submenu" style="display: none;">
+    <ul class="fu-submenu-level1" style="display: block;">
+    
+        <li data-feu-dir="/english/research/clusters">
+            <a href="https://www.fernuni-hagen.de/english/research/clusters/index.shtml" class="parent">
+                
+                    Research Clusters
+                
+                
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_blue_down.svg" title="&quot;Research Clusters&quot; Aufklappen" alt="" data-img="blue">
+                
+            </a>
+            
+                <ul class="fu-submenu-level2">
+                
+                    <li data-feu-dir="/english/research/clusters">
+                        <a href="https://www.fernuni-hagen.de/english/research/clusters/d2l2.shtml">
+                            
+                                D²L²
+                            
+                        </a>
+                    </li>
+                
+                </ul>
+            
+        </li>
+    
+        <li data-feu-dir="/english/research/early-career">
+            <a href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml"><strong>
+                
+                    Research Career Development
+                
+                
+            </strong></a>
+            
+        </li>
+    
+        <li data-feu-dir="/english/research/research-portal">
+            <a href="https://www.fernuni-hagen.de/english/research/research-portal/index.shtml">
+                
+                    Research in the Faculties
+                
+                
+            </a>
+            
+        </li>
+    
+        <li data-feu-dir="/english/research/support">
+            <a href="https://www.fernuni-hagen.de/english/research/support/index.shtml">
+                
+                    Support for Researchers
+                
+                
+            </a>
+            
+        </li>
+    
+    </ul>
+</div>
+</li><li class="fu-has-children feu-root-navigation" data-feu-dir="/english/university/" data-sort="300">
+                <a class="fu-toggle-arrow fu-arrow-down parent" href="javascript:void(0);" title="About Aufklappen" aria-expanded="false">
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_white_down.svg" title="About Aufklappen" alt="" data-img="white">
+                </a>
+                <a class="fu-has-popup" aria-haspopup="true" id="hauptnavigation-punkt-3" href="https://www.fernuni-hagen.de/english/university/index.shtml">About</a><div class="triangle"><div class="triangle"></div></div><div class="fu-submenu" style="display: none;">
+    <ul class="fu-submenu-level1">
+    
+        <li data-feu-dir="/english/university/profile">
+            <a href="https://www.fernuni-hagen.de/english/university/profile/index.shtml" class="parent">
+                
+                    University Profile
+                
+                
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_blue_down.svg" title="&quot;University Profile&quot; Aufklappen" alt="" data-img="blue">
+                
+            </a>
+            
+                <ul class="fu-submenu-level2">
+                
+                    <li data-feu-dir="/english/university/profile">
+                        <a href="https://www.fernuni-hagen.de/english/university/profile/history.shtml">
+                            
+                                History
+                            
+                        </a>
+                    </li>
+                
+                    <li data-feu-dir="/english/university/profile">
+                        <a href="https://www.fernuni-hagen.de/english/university/profile/facts-and-figures.shtml">
+                            
+                                Facts and Figures
+                            
+                        </a>
+                    </li>
+                
+                    <li data-feu-dir="/english/university/profile">
+                        <a href="https://www.fernuni-hagen.de/english/university/profile/society-of-friends.shtml">
+                            
+                                Friends of the FernUniversität
+                            
+                        </a>
+                    </li>
+                
+                </ul>
+            
+        </li>
+    
+        <li data-feu-dir="/english/university">
+            <a href="https://www.fernuni-hagen.de/english/university/faculties-and-services.shtml">
+                
+                    Faculties and Services
+                
+                
+            </a>
+            
+        </li>
+    
+        <li data-feu-dir="/english/university/management">
+            <a href="https://www.fernuni-hagen.de/english/university/management/index.shtml">
+                
+                    University Management
+                
+                
+            </a>
+            
+        </li>
+    
+        <li data-feu-dir="/english/university/international">
+            <a href="https://www.fernuni-hagen.de/english/university/international/index.shtml" class="parent">
+                
+                    International
+                
+                
+                    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_blue_down.svg" title="&quot;International&quot; Aufklappen" alt="" data-img="blue">
+                
+            </a>
+            
+                <ul class="fu-submenu-level2">
+                
+                    <li data-feu-dir="/english/university/international">
+                        <a href="https://www.fernuni-hagen.de/english/university/international/international-profile.shtml">
+                            
+                                International Profile
+                            
+                        </a>
+                    </li>
+                
+                    <li data-feu-dir="/english/university/international">
+                        <a href="https://www.fernuni-hagen.de/english/university/international/guest-information.shtml">
+                            
+                                Guest Information
+                            
+                        </a>
+                    </li>
+                
+                    <li data-feu-dir="/english/university/international">
+                        <a href="https://www.fernuni-hagen.de/english/university/international/projects.shtml">
+                            
+                                Cooperations, Projects, and Events
+                            
+                        </a>
+                    </li>
+                
+                    <li data-feu-dir="/english/university/international">
+                        <a href="https://www.fernuni-hagen.de/english/university/international/students.shtml">
+                            
+                                International Opportunities for Students
+                            
+                        </a>
+                    </li>
+                
+                    <li data-feu-dir="/english/university/international">
+                        <a href="https://www.fernuni-hagen.de/english/university/international/contact.shtml">
+                            
+                                Contact
+                            
+                        </a>
+                    </li>
+                
+                </ul>
+            
+        </li>
+    
+        <li data-feu-dir="/english/university">
+            <a href="https://www.fernuni-hagen.de/english/university/press.shtml">
+                
+                    Press Information
+                
+                
+            </a>
+            
+        </li>
+    
+        <li data-feu-dir="/english/university">
+            <a href="https://www.fernuni-hagen.de/english/university/careers.shtml">
+                
+                    Careers at the FernUniversität
+                
+                
+            </a>
+            
+        </li>
+    
+    </ul>
+</div>
+</li>
+                            </ul>
+                        </div>
+                        <div id="fu-search-icon-box">
+                            <a id="fu-search-icon" href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml#"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_search.svg" alt="Suche einblenden" class="fu-search-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                			<div id="fu-search-form" class="fade-out-200">
+				<div class="fu-container">
+					<div class="fu-row">
+						<div class="fu-col-xs-12">
+							<form role="search" method="post" name="search" id="search" action="https://www.fernuni-hagen.de/fu-search/index.jsp">
+								<input type="text" class="fu-search-input-field" name="query" id="query" size="15" placeholder="Suchbegriff eingeben">
+								<input class="fu-search-submit-button" type="submit" value="Suchen">
+							</form>
+							<script>
+								$(document).ready(function() {
+									$('#search').submit(function( event ) {
+										if($('#search-query').val() == '') {
+										alert( "Bitte einen Suchbegriff in das Suchfeld eingeben!" );
+										event.preventDefault();
+										}
+									});
+								});
+							</script>
+						</div> 
+					</div>
+				</div>
+			</div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="fu-container" id="fu-content">
+				<div class="fu-row">
+					<div class="fu-col-xs-12 fu-clearfix"><!-- tennant: 'shared', realm: 'sidebar', from: 'catmeta', list: 'sidebar_navigation', type: 'content'-->
+	<nav id="fu-aside">
+    <!-- sidebar -->
+    <div role="menu" aria-label="Untermenü">
+        <ul class="fu-sidemenu">
+        
+            <li class="fu-has-children" data-feu-path="/english/research/clusters/index.shtml" data-feu-dir="/english/research/clusters" role="menuitem">
+                
+                <a class="feu-a-submenu parent" href="https://www.fernuni-hagen.de/english/research/clusters/index.shtml">
+                
+                            
+                    
+                        Research Clusters
+                    
+                </a>
+            
+            <a class="fu-toggle-arrow fu-arrow-down" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="_1249_250375_262334_262381" aria-label="Research Clusters" href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml#" title=" Untermenü aufklappen"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_blue_down.svg" alt=""></a>
+            
+                <ul id="_1249_250375_262334_262381" class="fu-submenu-level1" aria-label="Research Clusters" role="menu" style="display:none">
+                
+                <li data-feu-path="/english/research/clusters/d2l2.shtml" data-feu-second="1" role="menuitem">
+                    <a class="feu-a-submenu2" href="https://www.fernuni-hagen.de/english/research/clusters/d2l2.shtml">
+                        
+                            D²L²
+                        
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+            <li class="fu-has-children" data-feu-path="/english/research/early-career/index.shtml" data-feu-dir="/english/research/early-career" role="menuitem">
+                
+                <a class="feu-a-submenu active" href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml">
+                
+                            
+                    
+                        Research Career Development
+                    
+                </a>
+            
+        </li>
+        
+            <li class="fu-has-children" data-feu-path="/english/research/research-portal/index.shtml" data-feu-dir="/english/research/research-portal" role="menuitem">
+                
+                <a class="feu-a-submenu" href="https://www.fernuni-hagen.de/english/research/research-portal/index.shtml">
+                
+                            
+                    
+                        Research in the Faculties
+                    
+                </a>
+            
+        </li>
+        
+            <li class="fu-has-children" data-feu-path="/english/research/support/index.shtml" data-feu-dir="/english/research/support" role="menuitem">
+                
+                <a class="feu-a-submenu" href="https://www.fernuni-hagen.de/english/research/support/index.shtml">
+                
+                            
+                    
+                        Support for Researchers
+                    
+                </a>
+            
+        </li>
+        
+        </ul>
+    </div>
+    <!-- /sidebar -->
+</nav>
+
+
+<main id="inhalt" class="fu-main" role="main">
+								<!-- tennant: 'shared', realm: 'top', from: 'catmeta', list: 'breadcrumb', type: 'content'-->
+	<div id="fu-breadcrumb">
+<ul id="brotkruemelpfad" class="brotkruemelpfad">
+<li><a href="https://www.fernuni-hagen.de/">FernUni</a> / </li>
+<li><a href="https://www.fernuni-hagen.de/english" title="English">English</a> / </li>
+<li><a href="https://www.fernuni-hagen.de/english/research" title="Research">Research</a> / </li>
+<li>Early Career Scholars</li>
+</ul>
+</div>
+	<!-- tennant: 'shared', realm: 'main', from: 'catmeta', list: 'title,default,zusatzinfos,autor', type: 'content'-->
+<h1 id="seitentitel">Service for Research Career Development</h1>
+
+    
+
+	<div class="text-default">
+		<h3>The Service for Research Career Development is operating remotely!</h3> <p><strong>Please note that until further notice, the Service for Research Career Development is available remotely and digitally.</strong></p> <p>Our advising services are still available to you in digital form, and we will continue to provide you with current information, announcements, and news as usual. You can reach us by telephone or <a href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml#" data-mt="c3duQGZlcm51bmktaGFnZW4uZGU=" class="fu-mail">via email</a> either to our central account or our personal accounts.</p> <p>More details about our remote and digital services, as well as further updates, can be found on our <a href="https://www.fernuni-hagen.de/forschung/swn/">German-language site.</a></p>
+	</div>
+
+	<div class="text-default">
+		<h2>Information – Advising– Networking</h2> <p>With the Service for Research Career Development, the FernUniversität in Hagen provides researchers in the early stages of their careers with a central location for information and assistance. We are the first point of contact for current or prospective doctoral candidates and postdocs with questions about general orientation, the qualification process and research funding, and when necessary can direct you to other contact points. We also supply information about academic careers and the qualification process at the FernUniversität.</p> <p>The many services and programs for researchers in the early stages of their careers intersect at the Service for Research Career Development, which also serves the faculties as a central point of contact and coordination for overarching questions about support for early career scholars.</p>
+	</div>
+
+<hr class="clear">
+<h2 class="clear ">
+Information
+</h2>
+<figure class="fu-clearfix fu-col-xs-12 fu-col-sm-6 fu-col-md-6 fu-col-lg-6 fu-block-left  ">
+    <div class="fu-image">
+    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/fittosize__500_0_80146b344c3e21e7dcda73cb12e5a1ca_q_informationen.jpg" alt="" class="fu-fullwidth">
+
+        <span id="span_etikett_10_57">Photo: fotolia, kantver</span>
+
+    </div>
+</figure>
+	<div class="text-default">
+		<p>The FernUniversität’s Service for Research Career Development provides an extensive selection of information for scholars in the early stages of their careers as well as a variety of informational events. On our German-language website, you can find our semester program, register for our newsletter to stay informed of the latest events and announcements, and find information about the qualification process, funding, careers, and gaining international experience.</p> <ul class="fu-link-list"> <li><a href="https://www.fernuni-hagen.de/forschung/swn/index.shtml">German-language site of the Service for Research Career Development</a></li> <li><a href="https://www.fernuni-hagen.de/forschung/swn/aktuelles.shtml">Newsletter (German)</a></li> <li><a href="https://www.fernuni-hagen.de/forschung/swn/semesterprogramm.shtml">Semester program (German)</a></li> </ul>
+	</div>
+
+<hr class="clear">
+	<div class="text-default">
+		<h2>Advising</h2> <p>The Service for Research Career Development offers an extensive portfolio of advising services, which includes:</p>
+	</div>
+
+<ul class="fu-accordion_56 smk_accordion acc_with_icon">
+
+<li class="accordion_in">
+<h3 class="acc_head"><button id="button_10_56_0_0" aria-expanded="false"><span class="acc_icon_expand"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_accordion_down.svg" alt="" title="Aufklappen"></span>Introductory Advising</button></h3>
+<section aria-labelledby="button_10_56_0_0" class="acc_content" style="display: none;">
+	<p>We assist new doctoral candidates and academic staff with questions such as: How do I approach this new career phase? What important contact points are there at the FernUniversität? What opportunities are there for networking?</p>
+
+</section>
+</li>
+
+<li class="accordion_in">
+<h3 class="acc_head"><button id="button_10_56_0_1" aria-expanded="false"><span class="acc_icon_expand"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_accordion_down.svg" alt="" title="Aufklappen"></span>Progress Advising</button></h3>
+<section aria-labelledby="button_10_56_0_1" class="acc_content" style="display: none;">
+	<p>During your qualification process, we can help with questions like: How do I handle crises and get through dry spells? How do I handle readjustments? How can I better combine my family or care obligations with my academic career?</p>
+
+</section>
+</li>
+
+<li class="accordion_in">
+<h3 class="acc_head"><button id="button_10_56_0_2" aria-expanded="false"><span class="acc_icon_expand"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_accordion_down.svg" alt="" title="Aufklappen"></span>Career Advising</button></h3>
+<section aria-labelledby="button_10_56_0_2" class="acc_content" style="display: none;">
+	<p>We assist with questions such as: What are my career options after my doctorate? What steps should I take to orient myself in the right direction?</p>
+
+</section>
+</li>
+
+<li class="accordion_in">
+<h3 class="acc_head"><button id="button_10_56_0_3" aria-expanded="false"><span class="acc_icon_expand"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_accordion_down.svg" alt="" title="Aufklappen"></span>Advising for Women</button></h3>
+<section aria-labelledby="button_10_56_0_3" class="acc_content" style="display: none;">
+	<p>We offer specially-tailored advising for women in the early phases of their research careers about the gender-specific challenges of academia.</p>
+
+</section>
+</li>
+
+<li class="accordion_in">
+<h3 class="acc_head"><button id="button_10_56_0_4" aria-expanded="false"><span class="acc_icon_expand"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_accordion_down.svg" alt="" title="Aufklappen"></span>Initial Advising with Referral</button></h3>
+<section aria-labelledby="button_10_56_0_4" class="acc_content" style="display: none;">
+	<p>We can help you learn about opportunities for funding, stays abroad and professional development opportunities.</p>
+
+</section>
+</li>
+
+<li class="accordion_in">
+<h3 class="acc_head"><button id="button_10_56_0_5" aria-expanded="false"><span class="acc_icon_expand"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/icon_arrow_accordion_down.svg" alt="" title="Aufklappen"></span>Peer Advising Groups</button></h3>
+<section aria-labelledby="button_10_56_0_5" class="acc_content" style="display: none;">
+	<p>In addition to one-on-one advising, we offer you the option of joining a peer advising group, in which you and your peers support one another with the day-to-day challenges of your career and develop solutions together.</p>
+
+</section>
+</li>
+
+</ul>
+  <script>
+    $(document).ready(function(){$(".fu-accordion_56").smk_Accordion({closeAble:true});});
+  </script>
+	<div class="text-default">
+		<p>To set up an appointment for personal advising, or to join a peer advising group, simply contact us via email: <a href="mailto:swn?subject=%5BSWN-Beratung%5D">swn</a></p>
+	</div>
+
+<hr class="clear">
+<h2 class="clear ">
+Networking
+</h2>
+<figure class="fu-clearfix fu-col-xs-12 fu-col-sm-6 fu-col-md-6 fu-col-lg-6 fu-block-right  ">
+    <div class="fu-image">
+    <img src="./Service for Research Career Development - FernUniversität in Hagen_files/fittosize__500_0_c2c51becb234a507062bf8b86bcaad8d_ernetzung_400.jpg" alt="" class="fu-fullwidth">
+
+        <span id="span_etikett_10_63">Photo: fotolia, vege</span>
+
+    </div>
+</figure>
+	<div class="text-default">
+		<p>Networking is an important component of creating a successful academic career or a successful exit from academia. The Service for Research Career Development provides a variety of networking opportunities, including:</p> <div class="imperia_external_editor_content" id="spalte_re_10_42_external_content"> <ul class="fu-link-list"> <li>Low-threshold opportunities for exchange with other early-career researchers, such as the <a href="https://www.fernuni-hagen.de/imperia/md/images/swn/4450__flyer_englishclub-2019_web.pdf">English Club for Doctoral Candidates and Postdocs</a>(PDF 234 KB) and the <em>Wissenshunger</em> event series</li> <li>A cross-disciplinary network for doctoral candidates, both on campus and digitally</li> <li>Opportunities for peer advising and supervision</li> <li>A <a href="https://www.fernuni-hagen.de/forschung/swn/mentoring.shtml">mentoring program (German)</a> for early-career researchers</li> <li><a href="https://www.fernuni-hagen.de/forschung/swn/vernetzung.shtml">Networks specifically for women (German)</a> in the early phases of their careers</li> </ul> </div>
+	</div>
+
+<hr class="clear">
+<h2 class="clear ">
+Subject-Specific Advising
+</h2>
+	<div class="text-default">
+		<p>The Service for Research Career Development offers general advising and assistance. For questions specific to your faculty or subject area, especially about initiating and carrying out your doctoral or postdoctoral qualifications, please contact the relevant faculty. You can find each faculty’s information at the links below:</p> <ul class="fu-link-list"> <li><a href="https://www.fernuni-hagen.de/ksw/forschung/promotionen.shtml">Faculty of Humanities and Social Sciences (German)</a></li> <li><a href="https://www.fernuni-hagen.de/mi/forschung/promotion/">Faculty of Mathematics and Computer Science (German)</a></li> <li><a href="https://www.fernuni-hagen.de/wirtschaftswissenschaft/forschung/promotionen.shtml">Faculty of Business Administration and Economics (German)</a></li> <li><a href="https://www.fernuni-hagen.de/rewi/forschung/promotion/index.shtml">Faculty of Law (German)</a></li> <li><a href="https://www.fernuni-hagen.de/psychologie/forschung/promotionen.shtml">Faculty of Psychology (German)</a></li> </ul>
+	</div>
+
+<hr class="clear">
+
+
+<div class="clear fu-editorial">
+        <a href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml#" data-mt="c3duQGZlcm51bmktaGFnZW4uZGU=" class="fu-mail">SWN - Service Wiss. Nachwuchs</a>
+                | 16.10.2020
+</div>
+
+
+						</main>
+					</div>
+				</div>
+			</div>
+
+
+
+
+        <footer>
+            <div class="fu-container">
+                <div class="fu-row"> <div class="fu-col-xs-12 fu-col-sm-12 fu-col-lg-7"> <div class="fu-col-xs-12 fu-col-sm-6"> <h2>CONTACT</h2> <ul> <li class="fu-margin-bottom-20">FernUniversität in Hagen<br> Universitätsstraße 47<br> 58097 Hagen</li> <li>Tel.: +49 2331 987-2444</li> <li>E-Mail: <a href="mailto:info@fernuni-hagen.de">info@fernuni-hagen.de</a></li> </ul> </div> <div class="fu-col-xs-12 fu-col-sm-6"> <ul> <li class="fu-margin-top-40"><a href="https://www.fernuni-hagen.de/service/en/contact.shtml">Contact Page</a></li> <li class="fu-margin-bottom-20"><a href="https://www.fernuni-hagen.de/service/en/campus-map-directions.shtml">Campus Map &amp; Directions</a></li> <li><a href="https://www.fernuni-hagen.de/english/university/press.shtml">Press</a></li> </ul> </div> </div> <div class="fu-col-xs-12 fu-col-sm-12 fu-col-lg-5"> <div class="fu-col-xs-12 fu-col-sm-6 fu-col-lg-8"> <h2>WEBSITE</h2> <ul> <li><a href="https://www.fernuni-hagen.de/english/university/careers.shtml">Careers</a></li> </ul> </div> <div class="fu-col-xs-12 fu-col-sm-6 fu-col-lg-4"> <ul> <li class="fu-margin-top-40"><a href="https://www.fernuni-hagen.de/service/datenschutz.shtml">Privacy Policy (German)</a></li> <li class="fu-margin-bottom-20"><a href="https://www.fernuni-hagen.de/english/university/data-protection.shtml">Data Protection Officer</a></li> <li><a href="https://www.fernuni-hagen.de/service/en/legal-notice.shtml">Imprint</a></li> </ul> </div> </div> </div>
+            </div>
+        </footer>
+
+
+<div id="fu-footer-map-show">
+</div>
+
+
+
+
+
+<a href="https://www.fernuni-hagen.de/english/research/early-career/index.shtml#" class="fu-scrollToTop fade-in" style="display: inline;"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/btn_scrolltotop.svg" alt="nach oben"></a>
+
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/lightslider-1.1.6.min.js.download"></script>
+
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/main.js.download"></script>
+
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/fresco.js.download"></script>
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/carousel-script.js.download"></script>
+
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/jquery.magnific-popup.min.js.download"></script>
+
+
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/responsiveTabs.min.js.download"></script>
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/smk-accordion.js.download"></script>
+
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/fileupload.js.download"></script>
+
+<script src="./Service for Research Career Development - FernUniversität in Hagen_files/leaflet.js.download"></script>
+
+
+
+
+
+<!-- Piwik -->
+<script>
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*." + document.location.host + "/index.shtml","*." + document.location.host]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.fernuni-hagen.de/analytics/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.fernuni-hagen.de/analytics/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="app-wait"><img src="./Service for Research Career Development - FernUniversität in Hagen_files/ajax-loader.gif"></div></body></html>

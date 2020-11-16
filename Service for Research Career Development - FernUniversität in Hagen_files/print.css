@@ -1,0 +1,96 @@
+/* font-family for print view */
+* {font-family: 'Arial',sans-serif; background-color: transparent; border: 0 none !important;}
+a,h1 a,h2 a,h3 a,h4 a,h5 a,h1,h2,h3,h4,h5 {font-weight: bold; color:#000;}
+
+body {
+font-size: 12pt; 
+color:#000;
+line-height: 1.4;
+word-spacing:1.1pt;
+letter-spacing:0.2pt; 
+width:100% !important;
+margin:0 !important;
+padding:0 !important; 
+background: none;
+}
+div { max-width: 99%; }
+hr { border-bottom: 1px solid black !important; }
+
+ 
+#fu-print-header {display: block; position: absolute; top: 0; left: 0; margin-bottom: 30px;}
+
+/* hidden elements for print view */
+.noprint,
+header,
+footer,
+#fu-sub-top,
+.fu-topline-notmobile,
+#fu-aside,
+#fu-breadcrumb,
+#fu-social-icons-container,
+#fu-footer-map,
+#fu-footer-map-content,
+.flexslider,
+#homepage_inhalt .sample,
+#fu-social-icons-list ,
+footer[role=contentinfo],
+.youtube .play-button,
+video {display: none;}
+
+/* set all margins and paddings from design to 0px */
+#fu-main {padding: 0; margin: 0; width: 100%; background: none;}
+
+/* set font color to black */
+h1 { margin-top: 1em; }
+
+/* tables */
+table, table tr, table td { border: 1px solid black !important; }
+table { margin-left: 1px; max-width: 99%; }
+th, thead {display: table-header-group; font-weight: bold; }
+tr {page-break-inside: avoid; }
+
+h2,h3 {page-break-after: avoid;}
+img {max-width: 100% !important;}
+img {page-break-inside: avoid;}
+
+
+/* display destination of links */
+/*a:link:after {content: " (" attr(href) ") ";}
+a:link { font-weight: bold; text-decoration: underline; color: #06c; }*/
+
+p,p a,ul,li {font-size: 12pt;}
+
+.fu-container-hero {  margin-top: 3em; }
+.fu-container-hero::before { content: url('/static/shared/images/logo_fernuni_hagen.svg');}
+.fu-scrollToTop { display: none !important; }
+
+/* Slider */
+#fu-news-slider { height: auto !important; width: auto !important; }
+#fu-focus-slider { height: auto !important; width: auto !important; }
+.fu-slider-controls { display: none; }
+
+.lSSlideOuter .lightSlider > *, 
+.lSSlideOuter .lSGallery li
+{ 
+float: left; 
+clear: both; 
+width: auto !important; 
+}
+
+.lslide .fu-image 
+{
+max-width: 15em; 
+float: left; 
+margin-right: 2em; 
+margin-top: 2em; 
+margin-bottom: 1em;
+}
+.fu-focus-slider-text{ float: left; }
+.fu-youtube { max-width: 20em;  margin-right: 1em; }
+#fu-focus-slider .fu-image img { max-width: 10em !important; }
+ 
+.fu-infobox,
+.fu-greyblock,
+.rahmen, 
+.rahmen-rot, 
+.rahmen-blau  { border: 1px solid black !important; }
